@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru_Ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="tank.png" class="tank" alt="">
+    <img src="button.png" class="btn button_up" alt="">
+    <img src="button.png" class="btn button_down" alt="">
+    <img src="button.png" class="btn button_left" alt="">
+    <img src="button.png" class="btn button_right" alt="">
+    <img src="fire_button.png" class="btn fire" alt="">
+    <img src="bullet.png" class="bullet" alt="">
+    <script>
+        var tank = document.querySelector('.tank')
+        var u = document.querySelector('.button_up')
+        var d = document.querySelector('.button_down')
+        var r = document.querySelector('.button_right')
+        var l = document.querySelector('.button_left')
+        var fireBtn = document.querySelector('.fire')
+        var bullet = document.querySelector('.bullet')
+        numX = 0
+        numY = 0
+        r.onclick = function(e) {
+            numX = numX + 50
+            tank.src = 'tank_r.png'
+            tank.style.left = numX + 'px'
+        }
+        l.onclick = function() {
+            numX = numX - 50
+            tank.src = 'tank_l.png'
+            tank.style.left = numX + 'px'
+        }
+        d.onclick = function() {
+            numY = numY + 50
+            tank.src = 'tank_d.png'
+            tank.style.top = numY + 'px'
+        }
+        u.onclick = function() {
+            numY = numY - 50
+            tank.src = 'tank.png'
+            tank.style.top = numY + 'px'
+        }
+        fireBtn.onclick = function(e){
+           console.log(e)
+            e.clientX = 50
+        }
+        
+    </script>
+</body></html>

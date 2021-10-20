@@ -1,0 +1,41 @@
+.btn {
+    position: absolute;
+    width: 200px;
+    height: 200px
+}
+
+.tank {
+    position: absolute;
+    width: 100px;
+    transition: 1s
+}
+
+.button_up {
+    bottom: 200px;
+    left: 200px;
+    transform: rotate(-90deg)
+}
+
+.button_left {
+    bottom: 100px;
+    transform: rotate(180deg)
+}
+
+.button_right {
+    bottom: 100px;
+    left: 400px;
+}
+
+.button_down {
+    bottom: 0px;
+    left: 200px;
+    transform: rotate(90deg)
+}
+
+.fire {
+    bottom: 100px;
+    right: 50px
+}
+.bullet{
+    width: 50px
+}
